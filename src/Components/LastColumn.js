@@ -39,6 +39,7 @@ useEffect(()=>{
   },[]);
 
   console.log(saveData)
+  console.log(ColId)
 
   const FilterData=saveData.find(elm=>elm.id===ColId);
 
