@@ -210,10 +210,13 @@ setId(id);
 setCol(true)
 }
 
+console.log(showCol)
 
   return (
     <>
-      <section className={`space-y-4 ${ mode ==="dark-mode" ? "mid-column1" : "mid-column" }`}>
+      <section className={`space-y-4 
+      ${ mode ==="dark-mode" ? "mid-column1" : "mid-column" } 
+       ${ showCol ? "mid-column-width" : "mid-column-width1"}`}>
         <div className="">
           <div className="">
             <p className="flex gap-1 items-center">

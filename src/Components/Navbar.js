@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { IoListSharp } from "react-icons/io5";
 import { FaSearch } from "react-icons/fa";
 import { CiGrid41 } from "react-icons/ci";
@@ -15,6 +15,17 @@ export const Navbar = () => {
   console.log(mode)
 
 
+ 
+
+  useEffect(() => {
+    
+    document.body.className = mode ==="dark-mode" ? 'dark-mode' : 'light-mode';
+  }, [mode]);
+
+  
+
+
+
   const toggleDarkMode = () => {
     dispatch(darkMode());
   };
@@ -24,6 +35,20 @@ export const Navbar = () => {
     
   };
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   return (
     <>
       <section>

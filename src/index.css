@@ -150,14 +150,17 @@ transform: rotate(40deg);
   height: 116vh;
   color: gray;
 
-  flex-basis: 50%;
+
 }
 
-/* .mid-column{
- 
 
+.mid-column-width1{
   flex-basis: 85%;
-} */
+}
+
+.mid-column-width{
+  flex-basis: 50%;
+}
 
 .Add-box{
   /* background-color: red; */
@@ -297,7 +300,7 @@ transform: rotate(40deg);
   font-weight: 500;
   height: 116vh;
 
-  flex-basis: 50%;
+  
 }
 
 
@@ -357,4 +360,25 @@ height: 116vh;
      align-items: center;
 
      border-bottom: 1px solid gainsboro;
+}
+
+
+
+
+/* body */
+
+
+.light-mode{
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
 }
