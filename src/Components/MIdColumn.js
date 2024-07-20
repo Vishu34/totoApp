@@ -20,6 +20,7 @@ import { CiStar } from "react-icons/ci";
 
 export const MidColumn = () => {
 
+  const mode = useSelector((state) => state.togglemode.value);
 
 
 
@@ -212,7 +213,7 @@ setCol(true)
 
   return (
     <>
-      <section className={`space-y-4 ${showCol} ? mid-column : mid-column2 `}>
+      <section className={`space-y-4 ${ mode ==="dark-mode" ? "mid-column1" : "mid-column" }`}>
         <div className="">
           <div className="">
             <p className="flex gap-1 items-center">
@@ -221,7 +222,9 @@ setCol(true)
           </div>
         </div>
 
-        <div className="border-b-2 pb-5 Add-box">
+        <div className=
+        {`space-y-4 border-b-2 pb-5 ${ mode ==="dark-mode" ? "Add-box1" : "Add-box" }`}
+        >
           <div className="">
             <h1 className="text-left"> Add a Task</h1>
           </div>
@@ -236,7 +239,11 @@ setCol(true)
               <FaBook className="icon" />
             </li>
 
-            <li className="add-task" onClick={() => setTask(true)}>
+            <li className=
+            
+
+            {`  ${ mode ==="dark-mode" ? "add-task1" : "add-task" }`}
+            onClick={() => setTask(true)}>
               Add Taks
             </li>
           </ul>
@@ -250,7 +257,9 @@ setCol(true)
             listData?.map(elm=>{
               return(
                 <React.Fragment key={elm.id}>
-                <ul className="all-list cursor-pointer"
+                <ul className=
+
+{`cursor-pointer  ${ mode ==="dark-mode" ? "all-list1" : "all-list" }`}
                 >
               <li className="flex items-center">
                 <input type="checkbox" onChange={handleCheck(elm.id)}/>
@@ -282,7 +291,10 @@ setCol(true)
             completedTask?.map(elm=>{
               return(
                 <React.Fragment key={elm.id}>
-                <ul className="all-list">
+                <ul className=
+                {`cursor-pointer  ${ mode ==="dark-mode" ? "all-list1" : "all-list" }`}
+
+                >
               <li className="flex items-center">
                 <input type="checkbox"  checked={elm.checked ? elm.checked: checked1}
                   onChange={handleCheck1(elm.id)}
@@ -305,7 +317,9 @@ setCol(true)
           <>
             <div className="">
               <form
-                className="Add-box Add-box1 p-5 rounded-sm space-y-5 "
+                className=
+
+                {`Add-box2 p-5 rounded-sm space-y-5 z-50 ${ mode ==="dark-mode" ? "Add-box1" : "Add-box" }`}
                 onSubmit={addTodoTask}
               >
                 <input
@@ -317,10 +331,16 @@ setCol(true)
                   className=" border-2 border-slate-300 w-[100%] rounded-sm p-2"
                 />
                 <ul className="flex justify-between ">
-                  <li className="add-task">
+                  <li className=
+                  
+                  {`cursor-pointer  ${ mode ==="dark-mode" ? "add-task1" : "add-task" }`}
+
+                  >
                     <button type="submit">Add Taks</button>
                   </li>
-                  <li className="add-task">
+                  <li className=
+                  
+                  {`cursor-pointer  ${ mode ==="dark-mode" ? "add-task1" : "add-task" }`}>
                     <button type="reset" onClick={() => setTask(false)}>
                       Cancel
                     </button>
@@ -336,7 +356,9 @@ setCol(true)
         {editTask !== " " ? (
           <>
             <div className="">
-              <form className="Add-box Add-box1 p-5 rounded-sm space-y-5 bg-red-500 z-50 "
+              <form className=
+
+{`Add-box2 p-5 rounded-sm space-y-5  ${ mode ==="dark-mode" ? "Add-box1" : "Add-box" }`}
               onSubmit={editTodoTask}>
               <input
                   type="text"
