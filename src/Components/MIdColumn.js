@@ -333,7 +333,7 @@ console.log(showCol)
                   onChange={handleInput}
                   placeholder="add task"
 
-                  className=" border-2 border-slate-300 w-[100%] rounded-sm p-2"
+                  className=" border-2 border-slate-300 w-[100%] rounded-sm p-2 text-black"
                 />
                 <ul className="flex justify-between ">
                   <li className=
@@ -370,13 +370,17 @@ console.log(showCol)
                   value={inputTask1}
                   onChange={handleInput}
                   placeholder="add task"
-                  className=" border-2 border-slate-300 w-[100%] rounded-sm p-2"
+                  className=" border-2 border-slate-300 w-[100%] rounded-sm p-2 text-black"
                 />
                 <ul className="flex justify-between ">
-                  <li className="add-task">
+                  <li className=
+                  {`cursor-pointer  ${ mode ==="dark-mode" ? "add-task1" : "add-task" }`}>
+                  
                     <button type="submit" >Edit Taks</button>
                   </li>
-                  <li className="add-task">
+                  <li className=
+                  {`cursor-pointer  ${ mode ==="dark-mode" ? "add-task1" : "add-task" }`}>
+                  
                     <button type="reset" onClick={() => seteditTask(" ")}>
                       Cancel
                     </button>

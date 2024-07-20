@@ -271,6 +271,8 @@ height: 116vh;
 .small-box1{
   background-color:#232323;
   border-radius: var(--box-radius);
+  color: white;
+  
 }
 
 .tasks-list1:hover{
@@ -293,7 +295,7 @@ transform: rotate(40deg);
 
 .mid-column1{
   background-color: #232323;
-  color:white;
+  /* color:white; */
   border-radius: var(--box-radius);
   padding: 10px;
  
@@ -320,7 +322,7 @@ transform: rotate(40deg);
   .add-task1{
     background-color: #347136;
     border-radius: var(--box-radius);
-    color:white;
+    /* color:white; */
     padding: 5px 15px 5px 15px;
 cursor: pointer;
 font-weight: 700;
@@ -355,7 +357,7 @@ height: 116vh;
   border-radius: var(--box-radius);
   padding:5px 20px 5px 20px;
     display:flex;
-    
+    color: white;
      gap: 2px;
      align-items: center;
 
@@ -379,8 +381,9 @@ height: 116vh;
   color: #ffffff;
 }
 
+
 body {
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 
