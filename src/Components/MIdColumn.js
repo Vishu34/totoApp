@@ -219,7 +219,9 @@ console.log(showCol)
        ${ showCol ? "mid-column-width" : "mid-column-width1"}`}>
         <div className="">
           <div className="">
-            <p className="flex gap-1 items-center">
+            <p className=
+            {`flex gap-1 items-center  ${ mode ==="dark-mode" ? "todo" : "" } `}
+            >
               Todo <FaAngleDown />
             </p>
           </div>
