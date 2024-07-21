@@ -9,7 +9,7 @@ const ShowLastProvider = ({children}) => {
     const [showCol , setCol]=useState(false);
 const [ColId , setId ]= useState();
 
- 
+const [listData, settodoData]=useState([]);
  return (
     <>
         <Appcontext.Provider
@@ -17,7 +17,8 @@ const [ColId , setId ]= useState();
             showCol,
             setCol,
             ColId,
-            setId
+            setId,
+            listData, settodoData
         }}>
 {children}
  </Appcontext.Provider>

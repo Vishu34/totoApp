@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { IoIosAlert } from "react-icons/io";
 
 import List from "@mui/material/List";
@@ -13,7 +13,7 @@ import { useSelector } from "react-redux";
 
 export const LastColumn = () => {
 
-    const {showCol , setCol , ColId}= UseshowLastCol();
+    const {showCol , setCol , ColId, listData, settodoData}= UseshowLastCol();
     const mode = useSelector((state) => state.togglemode.value);
 
    
@@ -23,25 +23,14 @@ setCol(false);
 
 
     // get teh completeed data
-
-    const [saveData , settodoData]=useState([])
-
-useEffect(()=>{
-
-
-    const data=localStorage.getItem("todoData");
-    if(data){
-      settodoData(JSON.parse(data));
-    }
-  
-
    
-  },[]);
-
-  console.log(saveData)
+    
+   
   console.log(ColId)
+  console.log(listData)
 
-  const FilterData=saveData.find(elm=>elm.id===ColId);
+
+  const FilterData=listData.find(elm=>elm.id===ColId);
 
   console.log(FilterData)
 

@@ -20,6 +20,8 @@ import { CiStar } from "react-icons/ci";
 
 export const MidColumn = () => {
 
+  const {listData, settodoData}= UseshowLastCol();
+
   const mode = useSelector((state) => state.togglemode.value);
 
 
@@ -59,6 +61,9 @@ export const MidColumn = () => {
       dispatch(addtodoData(inputTask))
       alert("Task added successfully");
 
+// setTimeout(() => {
+//   window.location.reload();
+// }, 1000);
 
     }
 
@@ -86,7 +91,7 @@ export const MidColumn = () => {
       
       alert("Task edited successfully");
 
-
+     
     }
   }
 
@@ -160,7 +165,7 @@ export const MidColumn = () => {
 
 // get the todolist data 
 
-const [listData, settodoData]=useState([]);
+
 const [CompleteData, settodoData1]=useState([]);
 
 useEffect(()=>{

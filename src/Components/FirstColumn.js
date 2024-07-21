@@ -11,6 +11,7 @@ import { MdAssignmentAdd } from "react-icons/md";
 import { TiShoppingBag } from "react-icons/ti";
 import { useSelector } from "react-redux";
 
+import { GoDotFill } from "react-icons/go";
 
 export const FirstColumn = () => {
 
@@ -60,8 +61,8 @@ export const FirstColumn = () => {
 
         {/* ********Today task*** */}
 
-        <div className={`p-2 ${mode === "dark-mode" ? "small-box1" : "small-box"}`}>
-          <ul className="flex items-center justify-between">
+        <div className={`p-2 flex flex-col  items-center ${mode === "dark-mode" ? "small-box1" : "small-box"}`}>
+          <ul className="flex items-center justify-between w-[100%]">
             <li>
               <ul className="">
                 <li>Today Task</li>
@@ -81,7 +82,9 @@ export const FirstColumn = () => {
         </div>
 
         <List className="nav">
-          <ListItem>Pending</ListItem>
+          <ListItem>
+          <GoDotFill className="text-green-400"/>
+          Pending</ListItem>
           <ListItem>Done</ListItem>
         </List>
 
