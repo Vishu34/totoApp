@@ -11,7 +11,7 @@ export const Home = () => {
       <section>
         <Navbar />
 
-        <nav className="flex items-start p-5 h-[100%] w-[100%] gap-2 ">
+        <nav className="flex-none space-y-4 sm:flex sm:space-y-0 items-start p-5 h-[100%] w-[100%] gap-2 ">
          
               <FirstColumn />
            
