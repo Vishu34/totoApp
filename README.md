@@ -34,7 +34,7 @@ Implement persistent storage (e.g., saving tasks to local storage) so that tasks
 
 
 
-# ****** ## all of the functionality which i have utilied and i will be waiting for your positive reponse ## ******
+# ****** ## all of the functionality which i have utilised and i will be waiting for your positive reponse ## ******
 
 
 # Getting Started with Create React App
