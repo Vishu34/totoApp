@@ -21,13 +21,14 @@ export const LastColumn = () => {
 setCol(false);
     }
 
+    
 
     // get teh completeed data
    
     
    
   console.log(ColId)
-  
+
   console.log(listData)
 
 
