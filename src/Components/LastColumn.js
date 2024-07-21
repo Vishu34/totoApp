@@ -27,6 +27,7 @@ setCol(false);
     
    
   console.log(ColId)
+  
   console.log(listData)
 
 
