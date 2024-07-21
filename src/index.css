@@ -92,7 +92,7 @@ input[type="checkbox"] {
 .img{
   width: 150px;
   height:150px;
-  margin:-50px 40px auto;
+  margin:-50px 125px auto;
   /* border-radius: 50%; */
 }
 .img-girl{
@@ -358,7 +358,7 @@ height: 116vh;
   padding:5px 20px 5px 20px;
     display:flex;
     color: white;
-    
+
      gap: 2px;
      align-items: center;
 
