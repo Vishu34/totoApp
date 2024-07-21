@@ -33,19 +33,19 @@ export const FirstColumn = () => {
 
         <div className={` ${mode === "dark-mode" ? "small-box1" : "small-box"}`}>
           <List className="">
-            <ListItem className= {` ${mode === "dark-mode" ? "tasks-list1" : "tasks-list"}`}>
+            <ListItem className= "tasks-list">
             <GiNotebook className="icon" />
             All Tasks</ListItem>
-            <ListItem className={` ${mode === "dark-mode" ? "tasks-list1" : "tasks-list"}`}>
+            <ListItem className="tasks-list">
             <TiShoppingBag className="icon"/>
             Today</ListItem>
-            <ListItem className={` ${mode === "dark-mode" ? "tasks-list1" : "tasks-list"}`}>
+            <ListItem className="tasks-list">
             <FaRegStar className="icon"/>
             Important</ListItem>
-            <ListItem className={` ${mode === "dark-mode" ? "tasks-list1" : "tasks-list"}`}>
+            <ListItem className="tasks-list">
             <FaSunPlantWilt className="icon"/>
             Planned</ListItem>
-            <ListItem className={` ${mode === "dark-mode" ? "tasks-list1" : "tasks-list"}`}>
+            <ListItem className="tasks-list">
             <MdAssignmentAdd className="icon"/>
             Assigned to me</ListItem>
           </List>
